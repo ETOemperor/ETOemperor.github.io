@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            div.video {
+                margin: auto;
+                width: 50%;
+                padding: 10px;
+            }
+            body {
+                background-image:url('/people/yewenjie/ye.jpg');
+                background-repeat:no-repeat;
+                background-attachment:fixed;
+                background-size: 100%;
+                background-size: cover;
+            }
+            em.about {
+                color: rgb(0, 0, 0);
+            }
+        </style>
+        <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+        <script src="https://unpkg.com/video.js/dist/video.js"></script>
+        <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+    </head>
+    <body>
+        <title>纪念叶文洁统帅</title>
+        <h1>ETO(地球三体组织)</h1>
+        <p>------------------------------------------------------------------------------<br></p>
+        <h2>纪念叶文洁统帅</h2>
+        <script>
+            window.alert("在此纪念叶文洁统帅");
+            console.log("纪念叶帅！！！");
+            function say() 
+            {
+                n=Math.floor(Math.random()*3);  
+                switch(n){
+                    case 0:
+                        document.getElementById("say").innerHTML = "我可以在这里待一辈子。";
+                    case 1:
+                        document.getElementById("say").innerHTML = "到这里来吧，我将帮助你们获得这个世界。我的文明已无力解决自己的问题，需要你们的力量来介入";
+                    case 2:
+                        document.getElementById("say").innerHTML = "第一，生存是文明的第一需要；第二，文明不断增长和扩张，但宇宙中的物质总量保持不变。";
+                    delete n
+                }
+                
+            }
+        </script>
+        <div class="video">
+            <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="320" height="180" data-setup='{}'>
+                <source src="/people/yewenjie/video/index.m3u8" type="application/x-mpegURL">
+            </video> 
+        </div>
+        <br>
+        <em class="about">
+            叶文洁，ETO统帅，担任过大学教授，天体物理学家，杨冬之母，宇宙社会学提出者。在红岸基地期间她向三体人发送信号。她在红岸基地遗址像罗辑传授黑暗森林法则。
+        </em>
+    </body>
+</html>
