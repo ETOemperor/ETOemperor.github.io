@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/eto.ico" />
+    <title>ETO勋章生成器</title>
+    <style>
+      .name{
+        font-family:"Times New Roman", Times, serif;
+        font-size:1000em;
+        position:relative;
+        left:50px;
+        top:100px;
+      }
+      .grade{
+        font-family:"Times New Roman", Times, serif;
+        font-size:1000em;
+        position:relative;
+        left:50px;
+        top:200px;
+      }
+      .class{
+        font-family:"Times New Roman", Times, serif;
+        font-size:1000em;
+        position:relative;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      function name(){  
+        var i=input.name.value;  
+        document.getElementById("name").innerHTML = "名称" + i;
+      }
+      function clas(){  
+        var i=input.class.value;  
+        document.getElementById("class").innerHTML = "分队" + i;
+      } 
+      function grade(){  
+        var i=input.grade.value;  
+        document.getElementById("grade").innerHTML = "等级" + i;
+      }
+      function main(){
+        name()
+        clas()
+        grade()
+      } 
+    </script>
+    <form name="input">
+      <p>名称：</p>
+      <input type="text" name="name">
+      <br>
+      <p>分队：</p>
+      <input type="text" name="class">
+      <br>
+      <p>等级：</p>
+      <input type="text" name="grade">
+    </form>
+    <button onclick="main()">确定</button>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div>
+      <em id="name" class="name">-</em>
+      <em id="class" class="class">-</em>
+      <em id="grade" class="grade">-</em>
+      <br>
+      <img src="./card.jpg"> 
+    </div>
+    
+  </body>
+</html>
